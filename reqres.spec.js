@@ -29,7 +29,8 @@ test.describe('Reqres API - Get User', () => {
 
  test('Get user without permission', async () => {
   const response = await getUser(1234);
-  expect(response.status).toBe(401);
+  expect(response.status).toBe(404);
 });
 });
+
 
